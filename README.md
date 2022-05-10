@@ -14,7 +14,7 @@ npm run client
 ``` javascript
 let args1 = 'FILL_ME_IN';
 ```
-4. Gain familiarity with async programming and log a desired the result in order:
+4. Gain familiarity with async programming and log the desired result in order:
 ```
 1.)
 2.)
