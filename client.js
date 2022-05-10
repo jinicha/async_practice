@@ -7,14 +7,17 @@ const file = 'file.txt';
 const start = () => console.log('1). Start'); // RUN before the async function
 const end = () => console.log('3). End'); // RUN after the async function
 
-/* 1). POST data from the url. Should log:
-Start
-Created data
-End
+
+
+
+/* 1). POST data to the url. Should log:
+1). Start
+2). Created data
+3). End
 */
 const postData = () => {
   start();
-  asyncFns.postData(url, { bcs: 20 })
+  asyncFns.postData(url, { dummyDataK: 'dummyDataV' })
     .then((res) => console.log('2). Created data'))
     .then(() => end());
 };
@@ -34,7 +37,9 @@ const task5 = () => {
     .then(() => end()); // setTimeout wont work the same. 
 }
 
-postData();
+
+/* Test Functions */
+// postData();
 // getData();
 
 

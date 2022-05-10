@@ -5,10 +5,13 @@ Practice async JS
 ```
 npm i
 ```
-2. Run server and client
+2. a) Run server
 ```
 npm start
-npm run client
+```
+2. b) Test client code with:
+```
+npm run client || node clinet.js
 ```
 3. Fill in the arg's, FILL_ME_IN's and empty functions
 ``` javascript
