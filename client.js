@@ -24,7 +24,7 @@ const getData = () => {
   start();
   asyncFns.getData(url)
     .then((res) => {
-      console.log(res.data.secrets === 'info' ? '2). Got data!' : 'Err');
+      console.log('2). Got data');
     })
     .then(() => end())
     // .then(end()) // uncomment this line and note the difference when its not called in an anonomous function
