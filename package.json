@@ -5,7 +5,12 @@
   "main": "async_functions.js",
   "scripts": {
     "start": "nodemon server.js",
-    "client": "node client.js"
+    "client": "node client.js",
+    "1": "node 1_AsyncProgramming.js",
+    "2": "node 2_Promises.js",
+    "3": "node 3_Promisification.js",
+    "4": "node 4_AsyncAwait.js",
+    "5": "node 5_.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +29,8 @@
     "axios": "^0.27.2",
     "bluebird": "^3.7.2",
     "express": "^4.18.1",
+    "needle": "^3.1.0",
     "nodemon": "^2.0.16"
-  }
+  },
+  "type": "module"
 }

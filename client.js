@@ -1,12 +1,12 @@
-/* Treat this as your client code */
 const axios = require('axios');
+const Promise = require('bluebird');
 const asyncFns = require('./async_functions.js');
 const url = 'http://localhost:3000';
 const file = 'file.txt';
 
-const start = () => console.log('1). Start'); // RUN before the async function
-const end = () => console.log('3). End'); // RUN after the async function
-
+const start = () => console.log('1). Start');               // RUN before the async function
+const mid = (action = '') => console.log('2). ' + action); // RUN on the async function
+const end = () => console.log('3). End');                 // RUN after the async function
 
 
 
@@ -35,7 +35,10 @@ const getData = () => {
 /* 3). UPDATE data from the url */
 /* 4). DELETE data from the url */
 
-/* 5). Tinker with other async functions */
+/* 5). */
+asyncFns.promisifiedReadFile(file).then(console.log)
+
+/* 6). Tinker with other async functions */
 const task5 = () => {
   start();
   asyncFns.asyncTask5()
@@ -43,10 +46,7 @@ const task5 = () => {
     .then(() => end()); // setTimeout wont work the same.
 }
 
-
 /* Test Functions */
 // postData();
-getData();
-
-
+// getData();
 // task5();

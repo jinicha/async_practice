@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const data = {'secrets': 'info', posts: []};
+const data = 'Got data';
 
 /* TODO:
 Complete the server setup.
@@ -8,19 +8,10 @@ Fill out the args.
 */
 
 
-const arg1 = 3000;
-const arg2 = (err) => {
-  if (err) {
-    console.log('not listening');
-  } else {
-    console.log(`listening on ${arg1}`);
-  }
-};
-const arg3 = (req, res) => { console.log('Posting ', req.body); res.sendStatus(201) };
-const arg4 = (req, res) => {
-  console.log('hi');
-  res.sendStatus(200);
-};
+const arg1 = 'FILL_ME_IN';
+const arg2 = 'FILL_ME_IN';
+const arg3 = 'FILL_ME_IN';
+const arg4 = 'FILL_ME_IN';
 const arg5 = 'FILL_ME_IN';
 const arg6 = 'FILL_ME_IN';
 
