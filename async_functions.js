@@ -3,8 +3,8 @@ const Promise = require('bluebird');
 const fs = require('fs');
 
 module.exports = {
-  postData: (url, data) => axios(url, data),
-  getData: url => {},
+  postData: (url, data) => axios.post(url, data),
+  getData: url => axios.get(url),
   updateData: url => {},
   deleteData: url => {},
   readFile: file => {
